@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+<body>
+    <div class="sidebar">
+        <a id="logo"><img src="Static/logo.png" alt="icon" height="100px" width="100px"></a>
+        <a href="#home"><img src="Static/home.png" alt="icon" height="30px" width="30px"></a>
+        <a href="#services"><img src="Static/noti.png" alt="icon" height="30px" width="30px"> </a>
+        <a href="#clients"><img src="Static/calen.png" alt="icon" height="30px" width="30px"> </a>
+        <a href="#contact"><img src="Static/chart.png" alt="icon" height="30px" width="30px"> </a>
+        <a href="#contact"><img src="Static/user.png" alt="icon" height="30px" width="30px"></a>
+        <a id="setting_icon" onclick="openNav()"><img src="Static/setting.png" alt="icon" height="30px" width="30px"></a>
+    </div>
+
+    
+
+    <div class="main">
+        <div id="settingSidebar" class="setting">
+            
+            <i onclick="closeNav()" class="fa fa-long-arrow-left" style="font-size:24px"> Setting</i>
+            <a ><img src="Static/pencil.png" alt="icon" height="30px" width="30px"></i>Edit Profile</a>
+            <a ><img src="Static/NotiGrey.png" alt="icon" height="30px" width="30px"></i>Notification</a>
+            <a ><img src="Static/secu.png" alt="icon" height="30px" width="30px"> Security</a>
+            <a ><img src="Static/setting.png" alt="icon" height="30px" width="30px"></i> Appearance</a>
+            <a ><img src="Static/info.png" alt="icon" height="30px" width="30px"></i> Help</a>
+        </div>
+        <div id="body_content" class="body_content">
+            <div class="content">
+                <div class="title">Edit profile</div>
+                <form id="myForm" class="myForm" action="#">
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details">First Name</span>
+                            <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" >
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Last Name</span>
+                            <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" >
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Email</span>
+                            <input type="text" id="email" name="email" onchange="ValidateEmail()" placeholder="example@gmail.com" >
+                            
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Address</span>
+                            <input type="text" id="address" name="address" placeholder="33062 Zboncak isle" >
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Contact Number</span>
+                            <input type="text" id="number" name="number" placeholder="0903757884"  >
+                        </div>
+                        <div class="input-box">
+                            <span class="details">City</span>
+                            <input type="text" id="city" name="city" placeholder="Enter city" >
+                        </div>
+                        <div class="button">
+                            <input type="submit" onclick="checkFunction()" value="Save">
+                        </div>
+                        <div class="cancel">
+                            <a href="#" onclick="myFunction()"> Cancel </a>
+                        </div>
+
+                    </div>
+                </form>
+
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="/main.js"></script>
+</body>
+</html>

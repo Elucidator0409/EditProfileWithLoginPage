@@ -1,0 +1,122 @@
+body {
+    background: linear-gradient(to right, #0083B0, #8C56FF) fixed;
+    padding: 100px 100px;
+}
+
+.wrapper{
+    margin: 100px 400px;
+    width: 1366px;
+    height: 749px;
+    background: linear-gradient(to right,white 70%,#C0DBEA 30%);
+    border-radius: 40px;
+    
+    
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 10px;
+    
+}
+.login-content{
+    width: 400px;
+    margin-bottom: 150px;
+}
+.login-content .title{
+    font-size: 35px;
+    font-weight: 500;
+    position: relative;
+    margin: 10px 0px;
+}
+
+.user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+  
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size: 16px;
+    line-height: 24px;
+
+  }
+
+  
+
+  .user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 5px ; /* danh khoi cho input box */
+   
+  }
+
+  form .btn{
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .alt-button p{
+    text-align: center;
+    color: #6096B4;
+    
+  }
+
+  .alt-button span{
+    text-align: center;
+    margin: 10px 0;
+    
+  }
+
+  form .alt-button {
+    text-align: center;
+    
+}
+
+.login-content .btn .button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #D885A3;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px #999;
+  }
+  
+.login-content .btn .button:hover {background-color: #D885A3}
+  
+.login-content .btn .button:active {
+    background-color: #D885A3;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.login-content .alt-button .button{
+    display: inline-block;
+    padding: 15px 25px;
+    width: 125px;
+    height: 50px;
+    border-radius: 40px;
+    background-color: #FFFFFF;
+    border: 2px solid #6096B4;
+}
+
+.image-content img{
+    margin-top: 100px;
+}
+  
+
+#incorrect-pass-username{
+  display: none;
+}
